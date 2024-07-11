@@ -142,7 +142,7 @@ def main(input_file_path):
     ips = parse_file_ioc(input_file_path)
     iocs = query_virus_total(ips)
     print(json.dumps(iocs, indent=4))
-    with open('final_results.txt', 'w') as f:
+    with open('final_results.json', 'w') as f:
         json.dump(iocs, f, indent=2)
 
 
