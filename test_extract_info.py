@@ -1,4 +1,4 @@
-from test_extract_info import _extract_info
+from main import _extract_info
 import json
 
 def test_extract_info():
@@ -6,18 +6,17 @@ def test_extract_info():
     with open('./example_virus_total_response.json', 'r') as f:
         test_virus_total_response = json.load(f)
 
-
     #when
     info = _extract_info(test_virus_total_response)
     #then
     assert info == {
-         "value":"31.139.365.245",
-         "type":"ip",
-         "providers":[
+         "value": "91.224.160.106",
+         "type": "ip",
+         "providers": [
             {
-               "provider":"VirusTotal",
-               "verdict":"harmless",
-               "score": "5/5"
+               "provider": "VirusTotal",
+               "verdict": "harmless",
+               "score": "63/63"
             }
 
          ]
