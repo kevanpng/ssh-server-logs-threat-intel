@@ -1,0 +1,34 @@
+{
+   "indicators":[
+      {
+         "value":"4.4.4.4",
+         "type":"ip",
+         "providers":[
+            {
+               "provider":"VirusTotal",
+               "verdict":"malicious",
+               "score":"90/100"
+            },
+            {
+               "provider":"OTX",
+               "verdict":"not malicious"
+            }
+         ]
+      },
+      {
+         "value":"8.8.8.8",
+         "type":"ip",
+         "providers":[
+            {
+               "provider":"VirusTotal",
+               "verdict":"malicious",
+               "score":"40/100"
+            },
+            {
+               "provider":"Foo Bar Analyser",
+               "verdict":"malicious"
+            }
+         ]
+      }
+   ]
+}
